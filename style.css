@@ -65,6 +65,11 @@ header h1{
     padding-right: 50px;
     width: 250px;
 }
+
+.imagem:hover img {
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
 .infos{
     color: var(--cor3);
     font-family: var(--font1);
@@ -133,7 +138,8 @@ header h1{
     .corpo{
         display: flex;
         margin-top: 100px;
-        width: 470px;
+        width: 483px;
+        margin-right: 0px;
     }
     .imagem img{
         display: none;
@@ -144,10 +150,11 @@ header h1{
         font-size: 18px;
         height: 100px;
         justify-content: space-between;
-        width: 100%;
     }
     .infosAdicionais {
         order: 1;
+        width: 450px;
+        margin: 20px 0px 20px 0px;
     }
     .p1 span, .p1 p {
         display: inline-block;
@@ -164,12 +171,23 @@ header h1{
     .botoes {
         order: 2;
         padding: 50px;
+        border-radius: 25px 25px 0px 0px;
+        background-color: var(--cor4);
     }
     .descricao {
         order: 3;
         padding: 0px 50px 50px 50px;
+        background-color: var(--cor4)
+    }
+    .descricao p {
+        border-top: 1px solid #646464;
+        padding-top: 25px;
     }
     .botoes , .descricao{
-        border-radius: 25px;
+        margin: 0;
+        ;
+    }
+    .btn1{
+        margin-right: 20px;
     }
 }
